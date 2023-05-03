@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallel Execution Suite" parallel="methods">
+<test name="Parallel Execution Tests">
+    <groups>
+        <run>
+            <include name="sortingLength"/>
+            <include name="OutputValidation"/>
+        </run>
+    </groups>
+    <classes>
+        <class name="com.beginsecure.domain.MainTest"/>
+    </classes>
+</test>
+</suite>
